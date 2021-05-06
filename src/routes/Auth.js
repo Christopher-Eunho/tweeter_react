@@ -64,9 +64,10 @@ const Auth = () => {
                 type="submit" 
                 value={newAccount ? "Create Account" : "Sign In"} />
         </form>
-        <span onClick={toggleAcount}>
+        <button onClick={toggleAcount}>
             {newAccount ? "Sign In" : "Create Account"}
-        </span>
+        </button>
+        <span>{error} </span>
         <div>
             <button>Continue with Google</button>
             <button>Continue with Github</button>
